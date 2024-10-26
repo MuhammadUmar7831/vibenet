@@ -162,7 +162,7 @@ export const CHATS = [
   {
     id: 2,
     avatar:
-      "https://thumbs.dreamstime.com/b/portrait-young-brutal-african-american-man-applying-facial-cream-his-cheek-close-up-portrait-men-s-beauty-skin-care-portrait-185903653.jpg",
+      'https://thumbs.dreamstime.com/b/portrait-young-brutal-african-american-man-applying-facial-cream-his-cheek-close-up-portrait-men-s-beauty-skin-care-portrait-185903653.jpg',
     name: 'Jane Smith',
     lastMessage: 'Don’t forget the meeting tomorrow at 9 AM.',
     lastMessageTime: '14:45',
@@ -246,3 +246,29 @@ export const CHATS = [
     lastMessageTime: 'Today',
   },
 ];
+
+const MESSAGES = [
+  { isMyMessage: true, text: 'Hello, how are you?', time: '11:00' },
+  {  text: 'I am good, thanks! What about you?', time: '11:01' },
+  { isMyMessage: true, text: 'Doing well, just working on a project.', time: '11:02' },
+  {  text: 'That’s great! What kind of project?', time: '11:03' },
+  { isMyMessage: true, text: 'It’s a chat application with React Native.', time: '11:05' },
+  {  text: 'Nice! Are you using Firebase for the backend?', time: '11:06' },
+  { isMyMessage: true, text: 'Not this time, I’m trying out a custom backend with Express.', time: '11:07' },
+  {  text: 'Sounds challenging but interesting!', time: '11:08' },
+  { isMyMessage: true, text: 'Yeah, learning a lot along the way.', time: '11:10' },
+  {  text: 'Any cool features you’re adding?', time: '11:12' },
+  { isMyMessage: true, text: 'Definitely! Thinking of adding typing indicators.', time: '11:13' },
+  {  text: 'That’s awesome! Those indicators are really useful.', time: '11:15' },
+  { isMyMessage: true, text: 'Totally agree. Trying to make it as real-time as possible.', time: '11:16' },
+  {  text: 'What about message status updates?', time: '11:17' },
+  { isMyMessage: true, text: 'Yes, I’m working on “sent”, “delivered”, and “seen” statuses.', time: '11:18' },
+  {  text: 'Great! When can I see a demo?', time: '11:19' },
+  { isMyMessage: true, text: 'Maybe in a week. Just need to iron out a few bugs.', time: '11:20' },
+  {  text: 'Can’t wait to see it in action!', time: '11:21' },
+  { isMyMessage: true, text: 'Thanks for the encouragement!', time: '11:22' },
+  {  text: 'Anytime! Good luck with the final touches.', time: '11:23' },
+];
+
+export default MESSAGES;
+
