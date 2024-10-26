@@ -1,3 +1,13 @@
+export const USER = {
+  fullName: 'Vito Corleane',
+  userName: 'corleane',
+  avatar: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFJTnn-mLd4B8MWO2DL3RQf0Kc4P6iomKL6A&s',
+  bio: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident distinctio, consequuntur ad in praesentium vel.',
+  posts: 15,
+  followers: 10,
+  following: 2,
+};
+
 export const USERS = [
   {
     name: 'John Doe',
@@ -111,5 +121,29 @@ export const POSTS = [
     comments: 150,
     caption:
       'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit exercitationem quasi dicta assumenda ipsum perferendis nostrum illum suscipit et ut!',
+  },
+];
+
+export const PROFILE_POSTS = [
+  {
+    image:
+      'https://images.unsplash.com/photo-1515091943-9d5c0ad475af?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+  },
+  {
+    image:
+      'https://images.unsplash.com/photo-1523428461295-92770e70d7ae?q=80&w=1390&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+    multi: true,
+  },
+  {
+    image:
+      'https://images.unsplash.com/photo-1488861859915-4b5a5e57649f?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+  },
+  {
+    image:
+      'https://images.unsplash.com/photo-1524613032530-449a5d94c285?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+  },
+  {
+    image:
+      'https://images.unsplash.com/photo-1532664189809-02133fee698d?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
   },
 ];
