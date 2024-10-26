@@ -1,7 +1,8 @@
 export const USER = {
   fullName: 'Vito Corleane',
   userName: 'corleane',
-  avatar: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFJTnn-mLd4B8MWO2DL3RQf0Kc4P6iomKL6A&s',
+  avatar:
+    'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFJTnn-mLd4B8MWO2DL3RQf0Kc4P6iomKL6A&s',
   bio: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident distinctio, consequuntur ad in praesentium vel.',
   posts: 15,
   followers: 10,
@@ -145,5 +146,103 @@ export const PROFILE_POSTS = [
   {
     image:
       'https://images.unsplash.com/photo-1532664189809-02133fee698d?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+  },
+];
+
+export const CHATS = [
+  {
+    id: 1,
+    avatar:
+      'https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Outdoors-man-portrait_%28cropped%29.jpg/220px-Outdoors-man-portrait_%28cropped%29.jpg',
+    name: 'John Doe',
+    lastMessage: 'Hey! Are we still on for tonight?',
+    lastMessageTime: '10:15',
+    unseenMessages: 2,
+  },
+  {
+    id: 2,
+    avatar:
+      "https://thumbs.dreamstime.com/b/portrait-young-brutal-african-american-man-applying-facial-cream-his-cheek-close-up-portrait-men-s-beauty-skin-care-portrait-185903653.jpg",
+    name: 'Jane Smith',
+    lastMessage: 'Don’t forget the meeting tomorrow at 9 AM.',
+    lastMessageTime: '14:45',
+    unseenMessages: 5,
+  },
+  {
+    id: 3,
+    avatar:
+      'https://img.freepik.com/free-photo/young-bearded-man-with-striped-shirt_273609-5677.jpg?uid=R104010199&ga=GA1.2.1530348098.1727530253&semt=ais_hybrid',
+    name: 'Alex Johnson',
+    lastMessage: 'I’ll check and let you know.',
+    lastMessageTime: 'Yesterday',
+  },
+  {
+    id: 4,
+    avatar:
+      'https://img.freepik.com/free-photo/portrait-successful-man-having-stubble-posing-with-broad-smile-keeping-arms-folded_171337-1267.jpg?uid=R104010199&ga=GA1.2.1530348098.1727530253&semt=ais_hybrid',
+    name: 'Chris Lee',
+    lastMessage: 'Can you send me the file by evening?',
+    lastMessageTime: 'Monday',
+    unseenMessages: 12,
+  },
+  {
+    id: 5,
+    avatar:
+      'https://img.freepik.com/free-photo/bohemian-man-with-his-arms-crossed_1368-3542.jpg?uid=R104010199&ga=GA1.2.1530348098.1727530253&semt=ais_hybrid',
+    name: 'Pat Taylor',
+    lastMessage: 'Just arrived at the location!',
+    lastMessageTime: '09:00',
+    unseenMessages: 8,
+  },
+  {
+    id: 6,
+    avatar:
+      'https://img.freepik.com/free-photo/handsome-bearded-businessman-rubbing-hands-having-deal_176420-18778.jpg?uid=R104010199&ga=GA1.2.1530348098.1727530253&semt=ais_hybrid',
+    name: 'Jamie Fox',
+    lastMessage: 'Call me when you’re free.',
+    lastMessageTime: '12:30',
+  },
+  {
+    id: 7,
+    avatar:
+      'https://img.freepik.com/premium-photo/banner-lead-generation_1139417-135284.jpg?uid=R104010199&ga=GA1.2.1530348098.1727530253&semt=ais_hybrid',
+    name: 'Morgan Riley',
+    lastMessage: 'Got it, thanks for the update!',
+    lastMessageTime: '08:20',
+    unseenMessages: 3,
+  },
+  {
+    id: 8,
+    avatar:
+      'https://img.freepik.com/free-photo/man-wearing-t-shirt-gesturing_23-2149393647.jpg?uid=R104010199&ga=GA1.2.1530348098.1727530253&semt=ais_hybrid',
+    name: 'Dana White',
+    lastMessage: 'Meeting postponed to next week.',
+    lastMessageTime: 'Yesterday',
+  },
+  {
+    id: 9,
+    avatar:
+      'https://img.freepik.com/free-photo/portrait-handsome-smiling-stylish-young-man-model-dressed-red-checkered-shirt-fashion-man-posing_158538-4914.jpg?uid=R104010199&ga=GA1.2.1530348098.1727530253&semt=ais_hybrid',
+    name: 'Jordan Lee',
+    lastMessage: 'Sent you the documents.',
+    lastMessageTime: '13:50',
+    unseenMessages: 6,
+  },
+  {
+    id: 10,
+    avatar:
+      'https://img.freepik.com/free-photo/front-view-smiley-business-man_23-2148479583.jpg?uid=R104010199&ga=GA1.2.1530348098.1727530253&semt=ais_hybrid',
+    name: 'Taylor Brooks',
+    lastMessage: 'Where are you?',
+    lastMessageTime: '15:30',
+    unseenMessages: 1,
+  },
+  {
+    id: 11,
+    avatar:
+      'https://img.freepik.com/free-photo/portrait-white-man-isolated_53876-40306.jpg?uid=R104010199&ga=GA1.2.1530348098.1727530253&semt=ais_hybrid',
+    name: 'Sam Wilson',
+    lastMessage: 'I’ll be there in 10 minutes.',
+    lastMessageTime: 'Today',
   },
 ];
