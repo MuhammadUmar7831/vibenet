@@ -26,6 +26,8 @@ export default function PostContent({
   caption,
   images,
   _isLiked,
+  commentList,
+  onCommentPress,
 }) {
   const [inViewImage, setInViewImage] = useState(0);
   const [seeAllText, setSeeAllText] = useState(false);
@@ -87,7 +89,9 @@ export default function PostContent({
             )}
             <Text style={styles.likeCommentText}>{likes}</Text>
           </TouchableOpacity>
-          <TouchableOpacity style={styles.commentButton}>
+          <TouchableOpacity
+            style={styles.commentButton}
+            onPress={() => onCommentPress(commentList)}>
             <ChatBubbleLeftIcon size={27} color="#000" />
             <Text style={styles.likeCommentText}>{comments}</Text>
           </TouchableOpacity>

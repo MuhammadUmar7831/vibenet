@@ -4,7 +4,7 @@ import PostHeader from './PostHeader';
 import PostContent from './PostContent';
 import {POSTS} from '../../constants/data';
 
-export default function Post() {
+export default function Post({onCommentPress}) {
   return (
     <View>
       {POSTS.map((post, index) => (
@@ -17,6 +17,8 @@ export default function Post() {
           <PostContent
             caption={post.caption}
             images={post.images}
+            onCommentPress={onCommentPress}
+            commentList={post.commentList}
             comments={post.comments}
             likes={post.likes}
             userName={post.userName}

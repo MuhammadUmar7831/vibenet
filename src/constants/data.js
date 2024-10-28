@@ -79,7 +79,6 @@ export const POSTS = [
       'https://images.unsplash.com/photo-1593766787879-e8c78e09cbbe?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8Y3JpY2tldHxlbnwwfHwwfHx8MA%3D%3D',
       'https://images.unsplash.com/photo-1624825602528-2ac658281cd7?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fGNyaWNrZXR8ZW58MHx8MHx8fDA%3D',
     ],
-
     fullName: 'David Miller',
     userName: 'miller418',
     userAvatar:
@@ -89,12 +88,26 @@ export const POSTS = [
     comments: 300,
     caption:
       'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit exercitationem quasi dicta assumenda ipsum perferendis nostrum illum suscipit et ut!',
+    commentList: [
+      {
+        avatar: 'https://randomuser.me/api/portraits/men/1.jpg',
+        comment: 'This is awesome!',
+        username: 'user123',
+        likes: 15,
+        isLiked: true
+      },
+      {
+        avatar: 'https://randomuser.me/api/portraits/women/2.jpg',
+        comment: 'Incredible view!',
+        username: 'nature_lover',
+        likes: 25,
+      },
+    ],
   },
   {
     images: [
       'https://leadpakistan.com.pk/news/wp-content/uploads/2023/12/babar-azam-steps-down-as-team-captain.jpg',
     ],
-
     fullName: 'Babar Azam',
     userName: 'zimbabar_official',
     userAvatar:
@@ -104,6 +117,21 @@ export const POSTS = [
     comments: 1000,
     caption:
       'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit exercitationem quasi dicta assumenda ipsum perferendis nostrum illum suscipit et ut!',
+    commentList: [
+      {
+        avatar: 'https://randomuser.me/api/portraits/men/3.jpg',
+        comment: 'Proud of you, Babar!',
+        username: 'cricket_fan',
+        likes: 20,
+      },
+      {
+        avatar: 'https://randomuser.me/api/portraits/men/4.jpg',
+        comment: 'Captain fantastic!',
+        username: 'sporty_dude',
+        likes: 30,
+        isLiked: true
+      },
+    ],
   },
   {
     images: [
@@ -112,7 +140,6 @@ export const POSTS = [
       'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvkncZ5vzbCimixENygiuxOqa5CEBrza14mQ&s',
       'https://static.wikia.nocookie.net/pirates/images/7/77/Jack_Crew_P3.jpg/revision/latest/scale-to-width-down/350?cb=20110702152314',
     ],
-
     fullName: 'Captain Jack Sparrow',
     userName: 'blackpearl',
     userAvatar:
@@ -122,6 +149,20 @@ export const POSTS = [
     comments: 150,
     caption:
       'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit exercitationem quasi dicta assumenda ipsum perferendis nostrum illum suscipit et ut!',
+    commentList: [
+      {
+        avatar: 'https://randomuser.me/api/portraits/women/5.jpg',
+        comment: 'Aye aye, Captain!',
+        username: 'pirate_fan',
+        likes: 50,
+      },
+      {
+        avatar: 'https://randomuser.me/api/portraits/men/6.jpg',
+        comment: 'Legendary character!',
+        username: 'movie_buff',
+        likes: 45,
+      },
+    ],
   },
 ];
 
@@ -248,27 +289,58 @@ export const CHATS = [
 ];
 
 const MESSAGES = [
-  { isMyMessage: true, text: 'Hello, how are you?', time: '11:00' },
-  {  text: 'I am good, thanks! What about you?', time: '11:01' },
-  { isMyMessage: true, text: 'Doing well, just working on a project.', time: '11:02' },
-  {  text: 'That’s great! What kind of project?', time: '11:03' },
-  { isMyMessage: true, text: 'It’s a chat application with React Native.', time: '11:05' },
-  {  text: 'Nice! Are you using Firebase for the backend?', time: '11:06' },
-  { isMyMessage: true, text: 'Not this time, I’m trying out a custom backend with Express.', time: '11:07' },
-  {  text: 'Sounds challenging but interesting!', time: '11:08' },
-  { isMyMessage: true, text: 'Yeah, learning a lot along the way.', time: '11:10' },
-  {  text: 'Any cool features you’re adding?', time: '11:12' },
-  { isMyMessage: true, text: 'Definitely! Thinking of adding typing indicators.', time: '11:13' },
-  {  text: 'That’s awesome! Those indicators are really useful.', time: '11:15' },
-  { isMyMessage: true, text: 'Totally agree. Trying to make it as real-time as possible.', time: '11:16' },
-  {  text: 'What about message status updates?', time: '11:17' },
-  { isMyMessage: true, text: 'Yes, I’m working on “sent”, “delivered”, and “seen” statuses.', time: '11:18' },
-  {  text: 'Great! When can I see a demo?', time: '11:19' },
-  { isMyMessage: true, text: 'Maybe in a week. Just need to iron out a few bugs.', time: '11:20' },
-  {  text: 'Can’t wait to see it in action!', time: '11:21' },
-  { isMyMessage: true, text: 'Thanks for the encouragement!', time: '11:22' },
-  {  text: 'Anytime! Good luck with the final touches.', time: '11:23' },
+  {isMyMessage: true, text: 'Hello, how are you?', time: '11:00'},
+  {text: 'I am good, thanks! What about you?', time: '11:01'},
+  {
+    isMyMessage: true,
+    text: 'Doing well, just working on a project.',
+    time: '11:02',
+  },
+  {text: 'That’s great! What kind of project?', time: '11:03'},
+  {
+    isMyMessage: true,
+    text: 'It’s a chat application with React Native.',
+    time: '11:05',
+  },
+  {text: 'Nice! Are you using Firebase for the backend?', time: '11:06'},
+  {
+    isMyMessage: true,
+    text: 'Not this time, I’m trying out a custom backend with Express.',
+    time: '11:07',
+  },
+  {text: 'Sounds challenging but interesting!', time: '11:08'},
+  {
+    isMyMessage: true,
+    text: 'Yeah, learning a lot along the way.',
+    time: '11:10',
+  },
+  {text: 'Any cool features you’re adding?', time: '11:12'},
+  {
+    isMyMessage: true,
+    text: 'Definitely! Thinking of adding typing indicators.',
+    time: '11:13',
+  },
+  {text: 'That’s awesome! Those indicators are really useful.', time: '11:15'},
+  {
+    isMyMessage: true,
+    text: 'Totally agree. Trying to make it as real-time as possible.',
+    time: '11:16',
+  },
+  {text: 'What about message status updates?', time: '11:17'},
+  {
+    isMyMessage: true,
+    text: 'Yes, I’m working on “sent”, “delivered”, and “seen” statuses.',
+    time: '11:18',
+  },
+  {text: 'Great! When can I see a demo?', time: '11:19'},
+  {
+    isMyMessage: true,
+    text: 'Maybe in a week. Just need to iron out a few bugs.',
+    time: '11:20',
+  },
+  {text: 'Can’t wait to see it in action!', time: '11:21'},
+  {isMyMessage: true, text: 'Thanks for the encouragement!', time: '11:22'},
+  {text: 'Anytime! Good luck with the final touches.', time: '11:23'},
 ];
 
 export default MESSAGES;
-

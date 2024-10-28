@@ -60,7 +60,7 @@ export default function BottomBar() {
           height={29}
           style={{
             borderRadius: 50,
-            borderColor: "#8899a6",
+            borderColor: '#8899a6',
             borderWidth: activeTab === 'Profile' ? 1 : 0,
           }}
         />
@@ -80,6 +80,7 @@ const styles = StyleSheet.create({
     justifyContent: 'space-around',
     marginHorizontal: 10,
     borderRadius: 18,
+    zIndex: 0,
   },
   plusIcon: {
     justifyContent: 'center',
